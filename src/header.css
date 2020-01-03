@@ -1,0 +1,9 @@
+.subheader {
+  display: flex;
+  flex-direction: row;
+}
+
+.subheader h3 {
+  margin-right: 20%;
+}
+
