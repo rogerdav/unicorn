@@ -14,9 +14,12 @@ class App extends Component {
     
     
     return (
-      <div>
+      <div className="main">
        <Header />
+       
       {contents}
+
+       
       </div>
     )
   }
