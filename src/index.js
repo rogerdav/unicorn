@@ -2,11 +2,21 @@ import React, {setGlobal} from 'reactn';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import axios from 'axios';
 import * as serviceWorker from './serviceWorker';
 
 setGlobal ({
-  unicorns: [{name: 'Peter', color: 'blue', food: 'cereal', location: 'Barn'}, {name: 'James', color: 'pink', food: 'mike and ikes', location: 'Barn'}]
+  unicorns: [],
 })
+
+axios.get(`https://unicorn-backend.herokuapp.com/api/v1/unicorn`)
+ .then(results => {
+   console.log('results', results.data);
+   setGlobal ({
+    unicorns: results.data
+  })
+ })
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
