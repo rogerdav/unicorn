@@ -27,7 +27,7 @@ class Unicorn extends Component {
   
   
   render () {
-    console.log('props', this.props.name);
+    
     return (
       <div className="unicornLineItem">
         <h3>{this.props.name}</h3>

@@ -1,10 +1,10 @@
 .unicornLineItem {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   justify-items: center;
 }
 .unicornLineItem h3 {
-  margin-right: 20%;
-  margin-left: 2%;
+  /* margin-right: 20%;
+  margin-left: 2%; */
 }
